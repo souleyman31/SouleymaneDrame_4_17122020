@@ -3,13 +3,11 @@
 	flex-direction: column;
 	height: 100vh;
 }
-.header {
-}
+
 .main {
 	flex: 1;
 }
-.footer {
-}
+
 .container-bcg {
 	width: 100%;
 	height: 300px;
@@ -25,8 +23,6 @@
 	font-size: 16px;
 }
 
-/************************************************/
-/************************************************/
 .container-form {
 	width: 100%;
 	padding: 100px 10px;
@@ -49,13 +45,13 @@
 	padding: 10px 16px;
 	width: 90%;
 	border-radius: 3px;
-	-webkit-border-radius: ;
-	-moz-border-radius: ;
-	-ms-border-radius: ;
-	-o-border-radius: ;
 	border: none;
 	background-color: rgba(255, 255, 255, 0.5);
 	border-bottom: 2px solid transparent;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
 }
 .form-input:focus {
 	outline: none;
@@ -89,7 +85,7 @@
 	-ms-transform: translateY(-50px);
 	-o-transform: translateY(-50px);
 }
-/*************************************/
+
 .form-paragraphe {
 	font-size: 18px;
 }
@@ -97,147 +93,31 @@
 .form-label1 {
 	font-size: 16px;
 }
-/*************************************/
-/*************************************/
+
 .address-localisation {
 	width: 70%;
+	height: 0;
 	margin: 20px auto 50px;
+	padding-bottom: 56.25%;
 	border: 3px solid #333333;
+	overflow: hidden;
+	position: relative;
 }
 
-/*************************************/
-/*************************************/
+.address-localisation iframe {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
 li:hover {
 	background-color: lightgrey;
 }
 
-/*************************************/
-/*************************************/
 @media screen and (max-width: 1025px) {
 	.form {
 		width: 90%;
 	}
 }
-
-/*************************************/
-/*************************************/
-/*************************************/
-/*************************************/
-/***
-.navigation {
-}
-.navigation-checkbox {
-	display: none;
-}
-.navigation-button {
-	width: 7rem;
-	height: 7rem;
-	border-radius: 50%;
-	position: fixed;
-	top: 6rem;
-	right: 6rem;
-	background-color: white;
-	z-index: 2000;
-	box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
-	-ms-border-radius: 50%;
-	-o-border-radius: 50%;
-	text-align: center;
-	cursor: pointer;
-}
-.navigation-background {
-	width: 6rem;
-	height: 6rem;
-	border-radius: 50%;
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
-	-ms-border-radius: 50%;
-	-o-border-radius: 50%;
-	background-image: radial-gradient(yellow, orange);
-	position: fixed;
-	top: 6.5rem;
-	right: 6.5rem;
-	z-index: 1000;
-	transition: transform 0.8s cubic-bezier(0.83, 0, 0.17, 1);
-	-webkit-transition: transform 0.8s cubic-bezier(0.83, 0, 0.17, 1);
-	-moz-transition: transform 0.8s cubic-bezier(0.83, 0, 0.17, 1);
-	-ms-transition: transform 0.8s cubic-bezier(0.83, 0, 0.17, 1);
-	-o-transition: transform 0.8s cubic-bezier(0.83, 0, 0.17, 1);
-}
-.navigation-main {
-	height: 100vh;
-	width: 100%;
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: 1500;
-	width: 0;
-	opacity: 0;
-	transition: all 0.8s cubic-bezier(0.68, -0.6, 0.32, 1.6);
-	-webkit-transition: all 0.8s cubic-bezier(0.68, -0.6, 0.32, 1.6);
-	-moz-transition: all 0.8s cubic-bezier(0.68, -0.6, 0.32, 1.6);
-	-ms-transition: all 0.8s cubic-bezier(0.68, -0.6, 0.32, 1.6);
-	-o-transition: all 0.8s cubic-bezier(0.68, -0.6, 0.32, 1.6);
-}
-.navigation-checkbox:checked ~ .navigation-background {
-	transform: scale(80);
-	-webkit-transform: scale(80);
-	-moz-transform: scale(80);
-	-ms-transform: scale(80);
-	-o-transform: scale(80);
-}
-.navigation-checkbox:checked ~ .navigation-main {
-	opacity: 1;
-	width: 100%;
-}
-.navigation-icon {
-	margin-top: 3rem;
-	position: relative;
-}
-.navigation-icon,
-.navigation-icon::before,
-.navigation-icon::after {
-	width: 3rem;
-	height: 2px;
-	background-color: orange;
-	display: inline-block;
-}
-.navigation-icon::before,
-.navigation-icon::after {
-	content: "";
-	position: absolute;
-	left: 0;
-}
-.navigation-icon::before {
-	top: -0.8rem;
-}
-.navigation-icon::after {
-	top: 0.8rem;
-}
-.navigation-button:hover .navigation-icon::before {
-	top: -1rem;
-}
-.navigation-button:hover .navigation-icon::after {
-	top: 1rem;
-}
-.navigation-checkbox:checked + .navigation-button .navigation-icon::before {
-	top: 0;
-	transform: rotate(-135deg);
-	-webkit-transform: rotate(-135deg);
-	-moz-transform: rotate(-135deg);
-	-ms-transform: rotate(-135deg);
-	-o-transform: rotate(-135deg);
-}
-.navigation-checkbox:checked + .navigation-button .navigation-icon::after {
-	top: 0;
-	transform: rotate(135deg);
-	-webkit-transform: rotate(135deg);
-	-moz-transform: rotate(135deg);
-	-ms-transform: rotate(135deg);
-	-o-transform: rotate(135deg);
-}
-.navigation-checkbox:checked + .navigation-button .navigation-icon {
-	background-color: transparent;
-}
-*/

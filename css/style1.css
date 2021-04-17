@@ -4,8 +4,6 @@
 	padding: 10px !important;
 }
 
-/***************************************************/
-/**************************************************/
 .color-grey {
 	color: #333333 !important;
 }
@@ -46,19 +44,15 @@
 	line-height: 35px;
 }
 
-/******************************************/
 .bloc-lg-modif {
 	display: flex;
 	flex-wrap: wrap;
-
-	/*max-width: 100%;*/
 }
 .portfolio-row {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	width: 100%;
-	/*background-color: yellow;*/
 }
 .col-sm-6 {
 	max-width: 48%;
@@ -71,7 +65,7 @@
 	-ms-border-radius: 20px;
 	-o-border-radius: 20px;
 }
-/***page css 742 */
+
 .portfolio-thumb {
 	width: 100%;
 	height: 270px;
@@ -96,8 +90,6 @@
 	-o-transform: scale(1.05);
 }
 
-/********************************************/
-/********************************************/
 @media screen and (max-width: 829px) {
 	.portfolio-row {
 		flex-direction: column;
@@ -125,8 +117,6 @@
 	}
 }
 
-/********************************************/
-/********************************************/
 .icon-modify {
 	background-image: linear-gradient(to right, #eecbbb, #f35309) !important;
 	-webkit-background-clip: text !important;
@@ -138,20 +128,19 @@
 	color: transparent !important;
 	font-size: 40px !important;
 	margin-top: 10px !important;
-	transition-duration: all 0.5s;
+	transition-duration: 0.5s;
 }
 .icon-modify1:hover {
 	background-image: linear-gradient(to right, #f35309, #f35309) !important;
 	-webkit-background-clip: text !important;
 	color: transparent !important;
 }
-/**************************/
+
 .filter-brightness {
 	filter: brightness(1.3);
 	-webkit-filter: brightness(1.3);
 }
 
-/*************************/
 .bloc-footer {
 	display: flex;
 	justify-content: space-between;
@@ -171,11 +160,6 @@
 	font-size: 24px;
 }
 
-/*************************/
-/*************************/
 .li:hover {
 	background-color: #eee;
 }
-
-/*************************/
-/*************************/
