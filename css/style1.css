@@ -114,6 +114,7 @@
 	background-image: linear-gradient(to right, #eecbbb, #f35309) !important;
 	-webkit-background-clip: text !important;
 	color: transparent !important;
+	text-align: center;
 }
 .icon-modify1 {
 	background-image: linear-gradient(to right, #333, #444) !important;
